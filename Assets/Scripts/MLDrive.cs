@@ -295,11 +295,11 @@ public class MLDrive : MonoBehaviour
 
     // Training parameters
     // How many total CEM iterations
-    public static Int32 cemIterations = 200;
+    public static Int32 cemIterations = 100;
     // How many gaussian samples in each CEM iteration
-    public static Int32 cemBatchSize = 200;
+    public static Int32 cemBatchSize = 100;
     // What percentage of cem samples are used to fit the gaussian for next iteration
-    public static double cemEliteFrac = 0.20f;
+    public static double cemEliteFrac = 0.15f;
     // Initial CEM gaussian uncertainty
     public static double cemInitStddev = 1.0f;
     // Scaling factor of how much extra noise to add each iteration (noise_factor/iteration_number noise is added to std.dev.)
